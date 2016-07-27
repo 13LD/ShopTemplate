@@ -9,4 +9,4 @@ from django.http import HttpResponse
 
 def index(request):
     # return HttpResponse("Hello, world. You're at the shop index.")
-    return render(request, 'main.html',{'message':request.GET.get('message',None)})
+    return render(request, 'index.html',{'message':request.GET.get('message',None)})
