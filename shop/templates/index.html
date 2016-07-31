@@ -4,15 +4,41 @@
     <meta charset="UTF-8">
     <title>Sale</title>
     {% load staticfiles %}
-
-<link  href="{% static 'css/styles.css' %}" rel="stylesheet" type="text/css">
+    <link  href="{% static 'css/styles.css' %}" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
 <body>
 
-<p>If you click on me, I will disappear.</p>
-<p>Click me away!</p>
-<p>Click me too!</p>
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">Catalog</a></li>
+  <li><a href="#contact">Contact</a></li>
+
+  <li>
+    <div class="box">
+        <div class="container-4">
+            <input type="search" id="search" placeholder="Search..." />
+            <button class="icon"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+  </li>
+
+
+  <li style="float:right">
+      <div class="icon-cart" style="float: left">
+          <div class="cart-line-1" style="background-color: #E5E9EA"></div>
+          <div class="cart-line-2" style="background-color: #E5E9EA"></div>
+          <div class="cart-line-3" style="background-color: #E5E9EA"></div>
+          <div class="cart-wheel" style="background-color: #E5E9EA"></div>
+      </div>
+  </li>
+
+
+
+  <li style="float:right"><a href="#about">Cart</a></li>
+  <li style="float:right"><a href="#about">About</a></li>
+</ul>
 
 </body>
 </html>

@@ -14,6 +14,7 @@ class Product(models.Model):
 class User(models.Model):
     userName = models.CharField(max_length=50)
     userSurname = models.CharField(max_length=50)
+    userPasswoer = models.CharField(max_length=50)
     userAge = models.DateField()
 
 class Sales(models.Model):
